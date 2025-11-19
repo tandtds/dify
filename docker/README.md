@@ -32,6 +32,23 @@ Welcome to the new `docker` directory for deploying Dify using Docker Compose. T
    - Change `ENABLE_OTEL` to `true` in `.env`.
    - Configure `OTLP_BASE_ENDPOINT` properly.
 
+### How to Run with Podman
+
+You can start the same Docker Compose stack with Podman on Linux or macOS (via `podman machine`).
+
+1. **Prerequisites**:
+   - Install Podman 4.4+ with `podman compose` (or `podman-compose`) support.
+   - On macOS or Windows, start the Podman VM with `podman machine start` before running any commands.
+1. **Environment Setup**:
+   - Navigate to the `docker` directory.
+   - Copy `.env.example` to `.env` (`cp .env.example .env`) and adjust values as needed.
+1. **Starting Services**:
+   - Use `podman compose up -d` from the `docker` directory to start the full stack.
+   - For middleware-only workflows, run `podman compose -f docker-compose.middleware.yaml --profile weaviate -p dify up -d` (choose another profile if not using Weaviate).
+1. **Notes for Rootless Podman**:
+   - Ensure the `volumes/` directory is writable by your user; adjust ownership with `chown -R $(id -u):$(id -g) volumes` if needed.
+   - If you rely on tools expecting a Docker socket, enable the Podman socket (`systemctl --user start podman.socket`) and set `DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock`.
+
 ### How to Deploy Middleware for Developing Dify
 
 1. **Middleware Setup**:
