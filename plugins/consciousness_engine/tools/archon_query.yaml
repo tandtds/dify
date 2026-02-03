@@ -1,0 +1,28 @@
+identity:
+  name: archon_query
+  author: AI ControlBoard Team
+  label:
+    en_US: Archon Query
+description:
+  human:
+    en_US: Query Archon knowledge base via MCP integration
+  llm: A tool that query archon knowledge base via mcp integration
+parameters:
+- name: query
+  type: string
+  required: true
+  label:
+    en_US: Query
+  human_description:
+    en_US: Knowledge base query
+  llm_description: Knowledge base query
+  form: llm
+- name: limit
+  type: number
+  required: false
+  label:
+    en_US: Limit
+  human_description:
+    en_US: Maximum number of results (default 5)
+  llm_description: Maximum number of results (default 5)
+  form: form

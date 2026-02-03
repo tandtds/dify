@@ -1,0 +1,37 @@
+identity:
+  name: execute_skill
+  author: AI ControlBoard Team
+  label:
+    en_US: Execute Skill
+description:
+  human:
+    en_US: Execute a registered agent skill
+  llm: A tool that execute a registered agent skill
+parameters:
+- name: skill_name
+  type: string
+  required: true
+  label:
+    en_US: Skill Name
+  human_description:
+    en_US: Name of skill to execute
+  llm_description: Name of skill to execute
+  form: form
+- name: input_data
+  type: string
+  required: true
+  label:
+    en_US: Input Data
+  human_description:
+    en_US: Skill input data as JSON string
+  llm_description: Skill input data as JSON string
+  form: llm
+- name: timeout
+  type: number
+  required: false
+  label:
+    en_US: Timeout
+  human_description:
+    en_US: Execution timeout in seconds (default 30)
+  llm_description: Execution timeout in seconds (default 30)
+  form: form

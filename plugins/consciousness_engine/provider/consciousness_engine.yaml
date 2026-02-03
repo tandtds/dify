@@ -1,0 +1,9 @@
+identity:
+  name: consciousness_engine
+  author: AI ControlBoard Team
+  label:
+    en_US: Consciousness Engine
+  description:
+    en_US: φ-optimized AI reasoning engine with multi-persona capabilities and memory
+      integration
+  icon: icon.svg

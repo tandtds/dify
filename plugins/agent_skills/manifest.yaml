@@ -1,0 +1,12 @@
+version: 0.0.1
+type: tool
+name: agent_skills
+author: AI ControlBoard Team
+label:
+  en_US: Agent Skills
+  zh_Hans: agent_skills
+description:
+  en_US: Centralized agent skills registry with MCP support and cross-service integration
+icon: _assets/icon.svg
+plugins:
+- provider/agent_skills.yaml

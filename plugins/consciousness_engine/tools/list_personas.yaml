@@ -1,0 +1,19 @@
+identity:
+  name: list_personas
+  author: AI ControlBoard Team
+  label:
+    en_US: List Personas
+description:
+  human:
+    en_US: List available AI personas/identity modes
+  llm: A tool that list available ai personas/identity modes
+parameters:
+- name: include_details
+  type: boolean
+  required: false
+  label:
+    en_US: Include Details
+  human_description:
+    en_US: Include detailed persona information
+  llm_description: Include detailed persona information
+  form: form

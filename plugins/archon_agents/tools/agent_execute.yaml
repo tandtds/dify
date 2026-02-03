@@ -1,0 +1,28 @@
+identity:
+  name: agent_execute
+  author: AI ControlBoard Team
+  label:
+    en_US: Agent Execute
+description:
+  human:
+    en_US: Execute an Archon agent task
+  llm: A tool that execute an archon agent task
+parameters:
+- name: task
+  type: string
+  required: true
+  label:
+    en_US: Task
+  human_description:
+    en_US: Task description for agent
+  llm_description: Task description for agent
+  form: llm
+- name: context
+  type: string
+  required: false
+  label:
+    en_US: Context
+  human_description:
+    en_US: Additional context as JSON string
+  llm_description: Additional context as JSON string
+  form: llm

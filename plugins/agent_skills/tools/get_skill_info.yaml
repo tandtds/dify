@@ -1,0 +1,19 @@
+identity:
+  name: get_skill_info
+  author: AI ControlBoard Team
+  label:
+    en_US: Get Skill Info
+description:
+  human:
+    en_US: Get detailed information about a specific skill
+  llm: A tool that get detailed information about a specific skill
+parameters:
+- name: skill_name
+  type: string
+  required: true
+  label:
+    en_US: Skill Name
+  human_description:
+    en_US: Name of the skill
+  llm_description: Name of the skill
+  form: form

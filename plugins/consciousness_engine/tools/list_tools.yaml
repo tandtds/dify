@@ -1,0 +1,10 @@
+identity:
+  name: list_tools
+  author: AI ControlBoard Team
+  label:
+    en_US: List Tools
+description:
+  human:
+    en_US: List available consciousness engine tools
+  llm: A tool that list available consciousness engine tools
+parameters: []

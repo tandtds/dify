@@ -1,0 +1,55 @@
+identity:
+  name: process
+  author: AI ControlBoard Team
+  label:
+    en_US: Process
+description:
+  human:
+    en_US: Process input through consciousness engine with φ-optimization
+  llm: A tool that process input through consciousness engine with φ-optimization
+parameters:
+- name: input
+  type: string
+  required: true
+  label:
+    en_US: Input
+  human_description:
+    en_US: Input text to process
+  llm_description: Input text to process
+  form: llm
+- name: user_id
+  type: string
+  required: false
+  label:
+    en_US: User Id
+  human_description:
+    en_US: User identifier for memory tracking
+  llm_description: User identifier for memory tracking
+  form: form
+- name: session_id
+  type: string
+  required: false
+  label:
+    en_US: Session Id
+  human_description:
+    en_US: Session identifier for context continuity
+  llm_description: Session identifier for context continuity
+  form: form
+- name: identity_mode
+  type: select
+  required: false
+  label:
+    en_US: Identity Mode
+  human_description:
+    en_US: AI persona/identity mode
+  llm_description: AI persona/identity mode
+  form: form
+- name: phi_optimization
+  type: boolean
+  required: false
+  label:
+    en_US: Phi Optimization
+  human_description:
+    en_US: Enable φ-ratio (golden ratio) optimization
+  llm_description: Enable φ-ratio (golden ratio) optimization
+  form: form

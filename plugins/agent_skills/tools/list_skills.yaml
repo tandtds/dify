@@ -1,0 +1,19 @@
+identity:
+  name: list_skills
+  author: AI ControlBoard Team
+  label:
+    en_US: List Skills
+description:
+  human:
+    en_US: List all available registered skills
+  llm: A tool that list all available registered skills
+parameters:
+- name: category
+  type: string
+  required: false
+  label:
+    en_US: Category
+  human_description:
+    en_US: Filter by category
+  llm_description: Filter by category
+  form: form

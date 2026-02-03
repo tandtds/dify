@@ -1,0 +1,13 @@
+version: 0.0.1
+type: tool
+name: consciousness_engine
+author: AI ControlBoard Team
+label:
+  en_US: Consciousness Engine
+  zh_Hans: consciousness_engine
+description:
+  en_US: φ-optimized AI reasoning engine with multi-persona capabilities and memory
+    integration
+icon: _assets/icon.svg
+plugins:
+- provider/consciousness_engine.yaml

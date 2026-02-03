@@ -1,0 +1,8 @@
+identity:
+  name: agent_skills
+  author: AI ControlBoard Team
+  label:
+    en_US: Agent Skills
+  description:
+    en_US: Centralized agent skills registry with MCP support and cross-service integration
+  icon: icon.svg

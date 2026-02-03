@@ -1,0 +1,28 @@
+identity:
+  name: execute_tool
+  author: AI ControlBoard Team
+  label:
+    en_US: Execute Tool
+description:
+  human:
+    en_US: Execute a whitelisted consciousness engine tool
+  llm: A tool that execute a whitelisted consciousness engine tool
+parameters:
+- name: tool
+  type: string
+  required: true
+  label:
+    en_US: Tool
+  human_description:
+    en_US: Tool name to execute
+  llm_description: Tool name to execute
+  form: form
+- name: args
+  type: string
+  required: true
+  label:
+    en_US: Args
+  human_description:
+    en_US: Tool arguments as JSON string
+  llm_description: Tool arguments as JSON string
+  form: llm

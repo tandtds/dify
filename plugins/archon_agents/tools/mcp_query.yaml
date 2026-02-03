@@ -1,0 +1,37 @@
+identity:
+  name: mcp_query
+  author: AI ControlBoard Team
+  label:
+    en_US: Mcp Query
+description:
+  human:
+    en_US: Query Archon via Model Context Protocol
+  llm: A tool that query archon via model context protocol
+parameters:
+- name: query
+  type: string
+  required: true
+  label:
+    en_US: Query
+  human_description:
+    en_US: MCP query string
+  llm_description: MCP query string
+  form: llm
+- name: method
+  type: select
+  required: false
+  label:
+    en_US: Method
+  human_description:
+    en_US: MCP method type
+  llm_description: MCP method type
+  form: form
+- name: limit
+  type: number
+  required: false
+  label:
+    en_US: Limit
+  human_description:
+    en_US: Result limit (default 5)
+  llm_description: Result limit (default 5)
+  form: form

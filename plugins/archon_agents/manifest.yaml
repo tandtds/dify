@@ -1,0 +1,12 @@
+version: 0.0.1
+type: tool
+name: archon_agents
+author: AI ControlBoard Team
+label:
+  en_US: Archon Agents
+  zh_Hans: archon_agents
+description:
+  en_US: Archon MCP agents for knowledge base operations and agent orchestration
+icon: _assets/icon.svg
+plugins:
+- provider/archon_agents.yaml

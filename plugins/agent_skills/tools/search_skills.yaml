@@ -1,0 +1,46 @@
+identity:
+  name: search_skills
+  author: AI ControlBoard Team
+  label:
+    en_US: Search Skills
+description:
+  human:
+    en_US: Search for skills by query, category, or tags
+  llm: A tool that search for skills by query, category, or tags
+parameters:
+- name: query
+  type: string
+  required: false
+  label:
+    en_US: Query
+  human_description:
+    en_US: Semantic search query
+  llm_description: Semantic search query
+  form: llm
+- name: category
+  type: select
+  required: false
+  label:
+    en_US: Category
+  human_description:
+    en_US: Skill category filter
+  llm_description: Skill category filter
+  form: form
+- name: tags
+  type: string
+  required: false
+  label:
+    en_US: Tags
+  human_description:
+    en_US: Comma-separated tags to filter by
+  llm_description: Comma-separated tags to filter by
+  form: form
+- name: limit
+  type: number
+  required: false
+  label:
+    en_US: Limit
+  human_description:
+    en_US: Maximum results to return (default 10)
+  llm_description: Maximum results to return (default 10)
+  form: form

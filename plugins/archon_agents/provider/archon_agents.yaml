@@ -1,0 +1,8 @@
+identity:
+  name: archon_agents
+  author: AI ControlBoard Team
+  label:
+    en_US: Archon Agents
+  description:
+    en_US: Archon MCP agents for knowledge base operations and agent orchestration
+  icon: icon.svg
